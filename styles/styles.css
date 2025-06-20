@@ -13,6 +13,14 @@
   --container-gap: 2rem;
 }
 
+.darkmode{
+   --orange: #dd6718;
+  --white: #060606;
+  --blue: #3b24ae;
+  --darkBlue: #1e125c;
+  --black: #efeeee;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -29,6 +37,8 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   scroll-behavior: smooth;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 *,
@@ -455,6 +465,8 @@ h5 {
 }
 
 
+
+
 /* Responsive */
 
 @media (max-width: 1024px) {
@@ -506,8 +518,25 @@ h5 {
     font-size: 1.125rem;
   }
 
+  .skills__icons--frontend{
+    width: 100%;
+  }
+
+  .projects__grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
   .skills{
     display: flex;
     flex-direction: column;
   }
+
+  .form__actions{
+    display: flex;
+    justify-content: center;
+  }
+
 }
